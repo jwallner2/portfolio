@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="page-background"></div>
+    <!-- ===================== SECTION 1 : HERO ===================== -->
+    <section id="home" class="hero-section vh-100 d-flex align-items-center position-relative overflow-hidden">
+
+        <!-- Fond animé -->
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-grid"></div>
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+        </div>
+
+        <div class="container position-relative z-2">
+            <div class="row align-items-center">
+
+                <!-- ===== COLONNE GAUCHE : TEXTE ===== -->
+                <div class="col-lg-6">
+                    <div class="hero-content">
+
+                        <div class="hero-label mb-4">
+                            <span class="line"></span>
+                            <span class="text">Portfolio 2025</span>
+                        </div>
+
+                        <h1 class="hero-greeting">Bonjour</h1>
+                        <h2 class="hero-intro">Je m'appelle</h2>
+                        <h2 class="hero-name">Jean Wallner</h2>
+
+                        <h3 class="hero-role mt-4">
+                            Je suis un
+                            <span class="typed-wrapper">
+                                <span id="typed-text"></span><span class="typed-cursor">|</span>
+                            </span>
+                        </h3>
+
+                        <div class="hero-buttons mt-5 d-flex flex-wrap gap-3">
+                            <a href="#about" class="btn btn-danger btn-lg px-4 py-3 fw-semibold hero-btn-primary">
+                                Découvrir mon travail
+                                <i class="bi bi-arrow-down ms-2"></i>
+                            </a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg px-4 py-3 hero-btn-secondary">
+                                Me contacter
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- ===== COLONNE DROITE : PHOTO ===== -->
+                <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end mt-5 mt-lg-0">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-frame">
+                            <!-- Remplace src par ton image -->
+                            <img src="moi.png" alt="Jean Wallner" class="hero-image">
+
+                            <!-- Petit truc en plus : badge -->
+                            <div class="hero-badge">
+                                <span>Disponible</span>
+                            </div>
+                        </div>
+
+                        <!-- Halo décoratif -->
+                        <div class="hero-image-glow"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- ===================== SECTION 2 : À PROPOS ===================== -->
+    <section id="about" class="about-section vh-100 d-flex align-items-center position-relative overflow-hidden">
+
+        <!-- Fond subtil -->
+        <div class="about-bg">
+            <div class="about-gradient"></div>
+        </div>
+
+        <div class="container position-relative z-2">
+            <div class="row align-items-center g-5">
+
+                <!-- ===== COLONNE GAUCHE : TEXTE ===== -->
+                <div class="col-lg-5">
+                    <div class="about-content">
+
+                        <div class="section-label mb-3">
+                            <span class="line"></span>
+                            <span>À propos</span>
+                        </div>
+
+                        <h2 class="about-title mb-4">
+                            Passionné par la<br>
+                            <span class="text-gradient">création digitale</span>
+                        </h2>
+
+                        <p class="about-text mb-4">
+                            Avec cinq années d'expérience initiale dans le développement
+<span class="text-gradient">web</span>, j'ai ensuite élargi mon champ d'expertise pour me
+consacrer pleinement au développement <span class="text-gradient">iOS</span> au cours des
+quatre dernières années
+                        </p>
+
+                        <p class="about-text-muted mb-5">
+                            Mon parcours reflète ma capacité à
+m'adapter et à évoluer dans des environnements techniques
+variés. Pendant mes années de développement web, j'ai
+contribué à la création de sites e-commerce et de dashboards
+web. Mon passage au développement iOS a été marqué par
+le travail sur une dizaine d'applications différentes, allant des
+applications de coloriage interactif aux projets de montage
+vidéo.<br>
+Ma maîtrise de l'anglais et mon expérience de travail en
+équipe renforcent ma volonté de continuer à exceller dans des
+projets novateurs, aussi bien dans le développement web que
+dans l'écosystème iOS.
+                        </p>
+
+                        <!-- Petites stats -->
+                        <div class="about-stats d-flex gap-4 flex-wrap">
+                            <div class="stat-item">
+                                <span class="stat-number">10</span>
+                                <span class="stat-label">Ans d'expérience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">20+</span>
+                                <span class="stat-label">Projets réalisés</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">travail d'équipe</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- ===== COLONNE DROITE : LES DEUX ZONES ===== -->
+                <div class="col-lg-7">
+                    <div class="row g-4">
+
+                        <!-- Carte Web -->
+                        <div class="col-md-6">
+                            <div class="category-card web-card" data-target="#panel-web">
+                                <div class="card-bg"></div>
+                                <div class="card-content">
+                                    <div class="card-icon">
+                                        <i class="bi bi-code-slash"></i>
+                                    </div>
+                                    <h3 class="card-title">Travaux Web</h3>
+                                    <p class="card-desc">
+                                        Sites vitrines, applications web, dashboards & interfaces modernes.
+                                    </p>
+                                    <div class="card-footer">
+                                        <span class="card-btn">
+                                            Explorer
+                                            <i class="bi bi-arrow-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Carte Mobile -->
+                        <div class="col-md-6">
+                            <div class="category-card mobile-card" data-target="#panel-mobile">
+                                <div class="card-bg"></div>
+                                <div class="card-content">
+                                    <div class="card-icon">
+                                        <i class="bi bi-phone"></i>
+                                    </div>
+                                    <h3 class="card-title">Travaux Mobile</h3>
+                                    <p class="card-desc">
+                                        Applications iOS & Android natives et cross-platform.
+                                    </p>
+                                    <div class="card-footer">
+                                        <span class="card-btn">
+                                            Explorer
+                                            <i class="bi bi-arrow-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TIMELINE PARCOURS PRO ===================== -->
+    <section id="experience" class="experience-section position-relative overflow-hidden py-5">
+
+        <div class="container position-relative z-2 py-5">
+
+            <div class="text-center mb-5">
+                <div class="section-label mb-3 justify-content-center">
+                    <span class="line"></span>
+                    <span>Parcours</span>
+                    <span class="line"></span>
+                </div>
+                <h2 class="about-title">
+                    Mon <span class="text-gradient">expérience</span>
+                </h2>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item" data-side="left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">Avr. 2014 - Juin 2014 · 3 mois</span>
+                        <h3 class="timeline-role">Stagiaire</h3>
+                        <span class="timeline-company">BATIWIZ.com</span>
+                        <span class="timeline-place"><i class="bi bi-geo-alt"></i> Paris</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-side="right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">Sept. 2014 - Sept. 2015 · 1 an 1 mois</span>
+                        <h3 class="timeline-role">Développeur web</h3>
+                        <span class="timeline-company">Alcyon communication</span>
+                        <span class="timeline-place"><i class="bi bi-geo-alt"></i> Paris et périphérie</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-side="left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">Sept. 2015 - Nov. 2018 · 3 ans 3 mois</span>
+                        <h3 class="timeline-role">Lead Web Developer</h3>
+                        <span class="timeline-company">MWM</span>
+                        <span class="timeline-place"><i class="bi bi-geo-alt"></i> Boulogne-Billancourt, France</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-side="right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">Sept. 2018 - Nov. 2023 · 5 ans 3 mois</span>
+                        <h3 class="timeline-role">Développeur d'applications iOS</h3>
+                        <span class="timeline-company">MWM</span>
+                        <span class="timeline-place"><i class="bi bi-geo-alt"></i> Boulogne-Billancourt, Île-de-France ·
+                            Hybride</span>
+                        <div class="timeline-skills">
+                            <span class="badge bg-secondary">Swift</span>
+                            <span class="badge bg-secondary">Développement iOS</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===================== STACK TECHNIQUE ===================== -->
+    <section id="stack" class="stack-section position-relative overflow-hidden py-5">
+
+        <div class="container position-relative z-2 py-5">
+
+            <div class="text-center mb-5">
+                <div class="section-label mb-3 justify-content-center">
+                    <span class="line"></span>
+                    <span>Stack</span>
+                    <span class="line"></span>
+                </div>
+                <h2 class="about-title">
+                    Technos <span class="text-gradient">utilisées</span>
+                </h2>
+            </div>
+
+            <div class="stack-grid">
+
+                <div class="stack-card" style="--tech-color:#f34f29;">
+                    <div class="stack-icon"><i class="bi bi-git"></i></div>
+                    <span class="stack-name">Git</span>
+                </div>
+
+                <div class="stack-card" style="--tech-color:#777bb4;">
+                    <div class="stack-icon"><i class="bi bi-filetype-php"></i></div>
+                    <span class="stack-name">PHP</span>
+                </div>
+
+                <div class="stack-card" style="--tech-color:#e34c26;">
+                    <div class="stack-icon"><i class="bi bi-filetype-html"></i></div>
+                    <span class="stack-name">HTML</span>
+                </div>
+
+                <div class="stack-card" style="--tech-color:#2965f1;">
+                    <div class="stack-icon"><i class="bi bi-filetype-css"></i></div>
+                    <span class="stack-name">CSS</span>
+                </div>
+
+                <div class="stack-card" style="--tech-color:#f7df1e;">
+                    <div class="stack-icon"><i class="bi bi-filetype-js"></i></div>
+                    <span class="stack-name">JavaScript</span>
+                </div>
+
+                <div class="stack-card" style="--tech-color:#fa7343;">
+                    <div class="stack-icon"><i class="bi bi-apple"></i></div>
+                    <span class="stack-name">Swift</span>
+                </div>
+
+
+                <div class="stack-card" style="--tech-color:#fa7343;">
+                    <div class="stack-icon"><i class="bi bi-shop"></i></div>
+                    <span class="stack-name">Prestashop</span>
+                </div>
+
+                <!-- Carte "en rajouter plus tard" : dupliquer un .stack-card ci-dessus pour ajouter une techno -->
+                <div class="stack-card stack-card-add">
+                    <div class="stack-icon"><i class="bi bi-plus-lg"></i></div>
+                    <span class="stack-name">Plus à venir</span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===================== PANEL WEB (Full Screen) ===================== -->
+    <div id="panel-web" class="fullscreen-panel">
+        <div class="panel-content">
+            <!-- Header sticky -->
+            <div class="panel-header">
+                <h2 class="m-0">Travaux Web</h2>
+                <button class="btn-close-panel"><i class="bi bi-x-lg"></i></button>
+            </div>
+
+            <!-- Contenu scrollable -->
+            <div class="panel-body">
+                <!-- Hero -->
+                <section class="panel-section text-center py-5">
+                    <h1 class="display-3 fw-bold mb-3">Mes projets Web</h1>
+                    <p class="lead col-lg-8 mx-auto">
+                        Voici une sélection de sites et d’applications web que j’ai réalisés.
+                    </p>
+                </section>
+
+                <!-- Grille de projets (placeholders) -->
+                <section class="panel-section">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="placeholder-card" data-project="ecommerce">
+                                <div class="placeholder-img">
+                                    <img src="ressources/img/web/phase3.png">
+                                </div>
+                                <h4 class="mt-3">Phase.com</h4>
+                                <p>Creation du site e-commerce phase.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="placeholder-card" data-project="ecommerce">
+                                <div class="placeholder-img">
+                                    <img src="ressources/img/web/mixfader3.png">
+                                </div>
+                                <h4 class="mt-3">Mixfader.com</h4>
+                                <p>Creation du site e-commerce mixfader.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="placeholder-card" data-project="ecommerce">
+                                <div class="placeholder-img">
+                                    <img src="ressources/img/web/mwm1.png">
+                                </div>
+                                <h4 class="mt-3">musicworldmedia.com</h4>
+                                <p>Site vitrine pour mettre en avant l'entreprise.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="placeholder-card" data-project="ecommerce">
+                                <div class="placeholder-img">
+                                    <img src="ressources/img/web/edjing1.png">
+                                </div>
+                                <h4 class="mt-3">Edjing.com</h4>
+                                <p>Site permettant de promouvoir l'application edjing sur iOS et Android</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="placeholder-card" data-project="ecommerce">
+                                <div class="placeholder-img">
+                                    <img src="ressources/img/web/aspen1.png">
+                                </div>
+                                <h4 class="mt-3">aspenrh.fr</h4>
+                                <p>Site de mise en relation de cadres et dirigeants.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="placeholder-card" data-project="ecommerce">
+                                <div class="placeholder-img">
+                                    <img src="ressources/img/web/dashboard1.png">
+                                </div>
+                                <h4 class="mt-3">Dashboard</h4>
+                                <p>Réalistion de dashboards dans le but d'administrer un parc d'application mobile</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section texte -->
+                <section class="panel-section py-5">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <h2 class="fw-bold mb-4">Mon approche</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus
+                                hendrerit arcu sed erat molestie vehicula.</p>
+                            <p>Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim.
+                                Phasellus molestie magna non est bibendum non venenatis nisl tempor.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== PANEL MOBILE (Full Screen) ===================== -->
+    <div id="panel-mobile" class="fullscreen-panel">
+        <div class="panel-content">
+            <div class="panel-header">
+                <h2 class="m-0">Travaux Mobile</h2>
+                <button class="btn-close-panel"><i class="bi bi-x-lg"></i></button>
+            </div>
+
+            <div class="panel-body">
+                <section class="panel-section text-center py-5">
+                    <h1 class="display-3 fw-bold mb-3">Mes projets Mobile</h1>
+                    <p class="lead col-lg-8 mx-auto">
+                        Applications iOS & Android que j’ai conçues et développées.
+                    </p>
+                </section>
+
+                <section class="panel-section">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="placeholder-card" data-project="ecommerce">
+                                <div class="placeholder-img mobile">
+                                    <img src="ressources/img/web/app1.png">
+                                </div>
+                                <h4 class="mt-3">Tuner Pro: Guitar Tuner & Tab</h4>
+                                <p>Application d'apprentissage de la guitare + accordeur</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="placeholder-card" data-project="ecommerce">
+                                <div class="placeholder-img mobile">
+                                    <img src="ressources/img/web/app2.png">
+                                </div>
+                                <h4 class="mt-3">Equalizer+ HD music player</h4>
+                                <p>Application permettant d'ajuster l'audio de son device iOS</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="placeholder-card" data-project="ecommerce">
+                                <div class="placeholder-img mobile">
+                                    <img src="ressources/img/web/app3.webp">
+                                </div>
+                                <h4 class="mt-3">Ringtones HD</h4>
+                                <p>Appliction de gestion de sonnerie personnalisée</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="placeholder-card" data-project="ecommerce">
+                                <div class="placeholder-img mobile">
+                                    <img src="ressources/img/web/app4.png">
+                                </div>
+                                <h4 class="mt-3">Color Pop: AI Coloring Book</h4>
+                                <p>Application de coloriage communautaire. Possibilité de partager ses coloriages</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="placeholder-card" data-project="ecommerce">
+                                <div class="placeholder-img mobile">
+                                    <img src="ressources/img/web/app5.jpg">
+                                </div>
+                                <h4 class="mt-3">Pixel Color</h4>
+                                <p>Application de coloriage via zones associées à des numéros</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="placeholder-card" data-project="ecommerce">
+                                <div class="placeholder-img mobile">
+                                    <img src="ressources/img/web/app6.png">
+                                </div>
+                                <h4 class="mt-3">Metronome Pro - Beat & Tempo</h4>
+                                <p>Application utilitaire de metronome + mini jeux de rythme</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="panel-section py-5">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-2">
+                            <h2 class="fw-bold mb-4">Technologies utilisées</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. React Native, Flutter, Swift et
+                                Kotlin font partie de mon quotidien.</p>
+                            <p>Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque
+                                eu tellus.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- ===================== SECTION CONTACT ===================== -->
+    <section id="contact" class="contact-section vh-100 d-flex align-items-center position-relative overflow-hidden">
+
+        <!-- Grille animée en fond -->
+        <div class="cyber-grid"></div>
+        <div class="cyber-glow"></div>
+
+        <div class="container position-relative z-2">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+
+                    <!-- Titre avec effet -->
+                    <div class="text-center mb-5">
+                        <h2 class="contact-title display-3 fw-bold mb-3">
+                            <span class="glitch" data-text="Contact Me">Contact Me</span>
+                        </h2>
+                        <p class="lead text-white-50">Une idée ? Un projet ? Envoie-moi un message.</p>
+                    </div>
+
+                    <!-- Formulaire futuriste -->
+                    <form id="contactForm" action="https://formsubmit.co/jeanwall55320@gmail.com" method="POST" class="cyber-form p-4 p-md-5 rounded-4">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control cyber-input" id="name" placeholder=" "
+                                        required>
+                                    <label for="name">Nom</label>
+                                    <span class="input-border"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-control cyber-input" id="email" placeholder=" "
+                                        required>
+                                    <label for="email">Email</label>
+                                    <span class="input-border"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <textarea class="form-control cyber-input" name="message" id="message" rows="5" placeholder=" "
+                                        required></textarea>
+                                    <label for="message">Message</label>
+                                    <span class="input-border"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-12 text-center mt-2">
+                                <input type="hidden" name="_captcha" value="false">
+                                <button type="submit" class="btn cyber-btn px-5 py-3">
+                                    <span class="btn-text">Envoyer le message</span>
+                                    <span class="btn-glitch"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                    <!-- Réseaux (optionnel) -->
+                    <div class="text-center mt-5">
+                        <div class="d-flex justify-content-center gap-4">
+                            <a href="#" class="social-link"><i class="bi bi-github"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-envelope"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== MODAL PROJET ===================== -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+            <div class="modal-content bg-dark text-white border-0 rounded-4 overflow-hidden">
+
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body p-0">
+                    <div class="row g-0">
+
+                        <!-- Colonne Carousel -->
+                        <div class="col-lg-6">
+                            <div class="p-3 p-lg-4 h-100 d-flex align-items-center">
+                                <div id="projectCarousel" class="carousel slide w-100" data-bs-ride="false">
+                                    <div class="carousel-inner rounded-3 overflow-hidden" id="carousel-inner">
+                                        <!-- images injectées ici -->
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#projectCarousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#projectCarousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Colonne Texte -->
+                        <div class="col-lg-6 d-flex flex-column">
+                            <div class="p-4 p-lg-5 flex-grow-1">
+                                <h2 class="fw-bold mb-3" id="modal-title">Titre du projet</h2>
+
+                                <div class="mb-4">
+                                    <span class="badge bg-danger me-2" id="modal-category">Web</span>
+                                    <span class="text-muted" id="modal-year">2024</span>
+                                </div>
+
+                                <p class="lead" id="modal-description">
+                                    Description du projet...
+                                </p>
+
+                                <h5 class="mt-4 mb-3">Technologies utilisées</h5>
+                                <div id="modal-techs" class="d-flex flex-wrap gap-2 mb-4">
+                                    <!-- Badges tech injectés ici -->
+                                </div>
+
+                                <div class="mt-auto pt-3">
+                                    <a href="#" class="btn btn-danger px-4 me-2" id="modal-link" target="_blank">
+                                        Voir le projet <i class="bi bi-box-arrow-up-right ms-1"></i>
+                                    </a>
+                                    <button class="btn btn-outline-light" data-bs-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
