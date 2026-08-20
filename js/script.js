@@ -26,72 +26,182 @@ $(document).ready(function () {
 
         // Données des projets (tu pourras en ajouter autant que tu veux)
         const projects = {
-            "ecommerce": {
+            "phase": {
                 title: "Phase.com",
                 category: "Web",
                 year: "2024",
-                description: "Plateforme e-commerce",
-                techs: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Bootstrap", "prestashop"],
+                description: "Boutique en ligne dédiée au produit Phase, destinée aux DJs. Développée avec HTML, CSS, JavaScript et PrestaShop, front-end 100 % custom. Intégration d’un système de précommande.",
+                techs: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Bootstrap", "Prestashop"],
                 link: "#",
                 images: [
-                    "Image 1 - Homepage",
-                    "Image 2 - Page produit",
-                    "Image 3 - Panier",
-                    "Image 4 - Dashboard"
+                    "<img src=\"ressources/img/web/phase3.png\">",
+                    "<img src=\"ressources/img/web/phase6.png\">",
+                    "<img src=\"ressources/img/web/phase5.png\">",
+                    "<img src=\"ressources/img/web/phase4.png\">",
+                    "<img src=\"ressources/img/web/phase1.png\">",
+                    "<img src=\"ressources/img/web/phase2.png\">"
                 ]
             },
-            "dashboard": {
-                title: "Dashboard Admin",
+            "mixfader": {
+                title: "Mixfader.com",
                 category: "Web",
                 year: "2024",
-                description: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Tableau de bord complet avec graphiques et gestion d'utilisateurs.",
-                techs: ["React", "Chart.js", "Node.js", "MongoDB"],
+                description: "Plateforme de vente en ligne conçue autour du produit Mixfader, spécialement pensée pour les DJs. Front-end 100 % sur mesure en HTML, CSS et JavaScript, intégré à PrestaShop. Système de précommande, design immersif, animations fluides et expérience mobile optimisée.",
+                techs: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Bootstrap", "Prestashop"],
                 link: "#",
-                images: ["Dashboard Overview", "Graphiques", "Gestion users"]
+                images: [
+                    "<img src=\"ressources/img/web/mixfader1.png\">", 
+                    "<img src=\"ressources/img/web/mixfader2.png\">", 
+                    "<img src=\"ressources/img/web/mixfader3.png\">",
+                    "<img src=\"ressources/img/web/mixfader4.png\">", 
+                    "<img src=\"ressources/img/web/mixfader5.png\">", 
+                    "<img src=\"ressources/img/web/mixfader6.png\">"
+                ]
             },
-            "vitrine": {
-                title: "Site Vitrine",
+            "mwm": {
+                title: "musicworldmedia.com",
                 category: "Web",
                 year: "2023",
-                description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Site vitrine élégant et ultra-rapide.",
-                techs: ["HTML", "CSS", "JavaScript", "GSAP"],
-                link: "#",
-                images: ["Hero", "À propos", "Contact"]
-            },
-            "saas": {
-                title: "Application SaaS",
-                category: "Web",
-                year: "2024",
-                description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Application SaaS multi-tenant.",
-                techs: ["Vue.js", "Laravel", "PostgreSQL", "Stripe"],
-                link: "#",
-                images: ["Interface principale", "Billing", "Settings"]
-            },
-            "portfolio": {
-                title: "Portfolio Client",
-                category: "Web",
-                year: "2023",
-                description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                description: "Site vitrine réalisé pour musicworldmedia.com, présentant la société et mettant en avant ses différents produits. Design moderne avec animations fluides et dynamiques pour une expérience utilisateur immersive.",
                 techs: ["HTML", "CSS", "JavaScript"],
                 link: "#",
-                images: ["Home", "Gallery", "Contact"]
+                images: [
+                    "<img src=\"ressources/img/web/mwm1.png\">", 
+                    "<img src=\"ressources/img/web/mwm2.png\">", 
+                    "<img src=\"ressources/img/web/mwm3.png\">",
+                    "<img src=\"ressources/img/web/mwm4.png\">", 
+                    "<img src=\"ressources/img/web/mwm5.png\">",
+                    "<img src=\"ressources/img/web/mwm6.png\">"
+                ]
             },
-            "landing": {
-                title: "Landing Page",
+            "edjing": {
+                title: "edjing.com",
                 category: "Web",
                 year: "2024",
-                description: "Sunt in culpa qui officia deserunt mollit anim id est laborum. Landing page optimisée conversion.",
-                techs: ["HTML", "Tailwind", "JavaScript"],
+                description: "Site vitrine conçu pour edjing.com, présentant l’application de DJ mobile. Intégration d’un player permettant d’écouter les mix créés depuis l’application.",
+                techs: ["HTML", "CSS", "JavaScript"],
                 link: "#",
-                images: ["Hero Section", "Features", "CTA"]
+                images: [
+                    "<img src=\"ressources/img/web/edjing1.png\">", 
+                    "<img src=\"ressources/img/web/edjing2.png\">", 
+                    "<img src=\"ressources/img/web/edjing5.png\">"
+                ]
+            },
+            "aspen": {
+                title: "aspen",
+                category: "Web",
+                year: "2023",
+                description: "Integration de la maquette.",
+                techs: ["HTML", "CSS", "JavaScript"],
+                link: "#",
+                images: ["<img src=\"ressources/img/web/aspen1.png\">"]
+            },
+            "dashboard": {
+                title: "dashboard",
+                category: "Web",
+                year: "2024",
+                description: "Developpement de dashboard qui permettent de gérer à distance tout le parc d'applications mobile. Gestion des AB tests inapp, traductions, pricing... (images d'illustration pour raison de confidentialité)",
+                techs: ["Angular", "Vue.js"],
+                link: "#",
+                images: ["<img src=\"ressources/img/web/dashboard1.png\">", "<img src=\"ressources/img/web/dashboard2.png\">"]
+            },
+            "tuner": {
+                title: "Tuner Pro: Guitar Tuner & Tab",
+                category: "Web",
+                year: "2024",
+                description: "Application d'apprentissage de la guitare + accordeur",
+                techs: ["Swift"],
+                link: "#",
+                images: [
+                    "<img src=\"ressources/img/web/tuner1.png\">", 
+                    "<img src=\"ressources/img/web/tuner2.png\">", 
+                    "<img src=\"ressources/img/web/tuner3.png\">",
+                    "<img src=\"ressources/img/web/tuner4.png\">", 
+                    "<img src=\"ressources/img/web/tuner5.png\">"
+                ]
+            },
+            "eq": {
+                title: "Equalizer+ HD music player",
+                category: "Web",
+                year: "2024",
+                description: "Application permettant d'ajuster l'audio de son device iOS",
+                techs: ["Swift"],
+                link: "#",
+                images: [
+                    "<img src=\"ressources/img/web/eq1.png\">", 
+                    "<img src=\"ressources/img/web/eq2.png\">", 
+                    "<img src=\"ressources/img/web/eq3.png\">",
+                    "<img src=\"ressources/img/web/eq4.png\">", 
+                    "<img src=\"ressources/img/web/eq5.png\">"
+                ]
+            },
+            "ring": {
+                title: "Ringtones HD",
+                category: "Web",
+                year: "2024",
+                description: "Appliction de gestion de sonnerie personnalisée",
+                techs: ["Swift"],
+                link: "#",
+                images: [
+                    "<img src=\"ressources/img/web/ring1.png\">", 
+                    "<img src=\"ressources/img/web/ring2.png\">", 
+                    "<img src=\"ressources/img/web/ring3.png\">",
+                    "<img src=\"ressources/img/web/ring4.png\">", 
+                    "<img src=\"ressources/img/web/ring5.png\">"
+                ]
+            },
+            "pop": {
+                title: "Color Pop: AI Coloring Book",
+                category: "Web",
+                year: "2024",
+                description: "Application de coloriage communautaire. Possibilité de partager ses coloriages",
+                techs: ["Swift"],
+                link: "#",
+                images: [
+                    "<img src=\"ressources/img/web/pop1.png\">", 
+                    "<img src=\"ressources/img/web/pop2.png\">", 
+                    "<img src=\"ressources/img/web/pop3.png\">",
+                    "<img src=\"ressources/img/web/pop4.png\">", 
+                    "<img src=\"ressources/img/web/pop5.png\">"
+                ]
+            },
+            "pixel": {
+                title: "Pixel Color",
+                category: "Web",
+                year: "2024",
+                description: "Application de coloriage via zones associées à des numéros",
+                techs: ["Swift"],
+                link: "#",
+                images: [
+                    "<img src=\"ressources/img/web/pixel1.png\">", 
+                    "<img src=\"ressources/img/web/pixel2.png\">", 
+                    "<img src=\"ressources/img/web/pixel3.png\">",
+                    "<img src=\"ressources/img/web/pixel4.png\">", 
+                    "<img src=\"ressources/img/web/pixel5.png\">"
+                ]
+            },
+            "metro": {
+                title: "Metronome Pro - Beat & Tempo",
+                category: "Web",
+                year: "2024",
+                description: "Application utilitaire de metronome + mini jeux de rythme",
+                techs: ["Swift"],
+                link: "#",
+                images: [
+                    "<img src=\"ressources/img/web/metro1.png\">", 
+                    "<img src=\"ressources/img/web/metro2.png\">", 
+                    "<img src=\"ressources/img/web/metro3.png\">",
+                    "<img src=\"ressources/img/web/metro4.png\">", 
+                    "<img src=\"ressources/img/web/metro5.png\">"
+                ]
             }
         };
-        /*
+        
         // Clic sur une carte projet
         $(document).on("click", ".placeholder-card", function () {
             const projectId = $(this).data("project");
             const project = projects[projectId];
-
+            const isMobile = $(this).hasClass("mobile")
             if (!project) return;
 
             // Remplir le modal
@@ -110,6 +220,12 @@ $(document).ready(function () {
 
             // Carousel
             const $carousel = $("#carousel-inner");
+            if (isMobile) {
+                $carousel.addClass( "mobile" );
+            } else {
+                $carousel.removeClass( "mobile" );
+            }
+            
             $carousel.empty();
 
             project.images.forEach((img, index) => {
@@ -126,7 +242,7 @@ $(document).ready(function () {
             // Ouvrir le modal
             const modal = new bootstrap.Modal(document.getElementById("projectModal"));
             modal.show();
-        });*/
+        });
 
         // Empêche l'envoi réel + petit feedback
         /*
